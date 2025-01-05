@@ -7,19 +7,18 @@ const Navbar = () => {
       padding: '10px 20px',
       display: 'flex',
       justifyContent: 'left',
-      alignItems: 'left',
+      alignItems: 'center',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      maxHeight : "250px"
-      
+      height: '100px', // Hauteur de la navbar
     }}>
       <a href="/">
         <img 
-          src="lg.png"  // Remplacez ce chemin par le chemin de votre logo
+          src="logo.png" // Remplacez par le chemin réel de votre logo
           alt="Logo"
           style={{
-            maxHeight:"230px"
+            maxHeight: '100%', // L'image occupe toute la hauteur de la navbar
+            maxWidth: 'auto',  // La largeur est ajustée automatiquement pour respecter les proportions
           }}
-          
         />
       </a>
     </nav>

@@ -20,7 +20,6 @@ const VolsList = () => {
     }, [status, dispatch]);
 
     // Filtrer les vols en fonction des dates saisies
-    // Filtrer les vols en fonction des dates saisies
     const filteredFlights = vols.filter((vol) => {
         if (!startDate && !endDate) return true; // If no date is selected, show all flights
     
@@ -100,13 +99,13 @@ const VolsList = () => {
                 />
                 <button
                     style={{
-                        padding: "5px 10px",
+                        padding: "10px 10px",
                         backgroundColor: "#008080",
                         color: "white",
                         border: "none",
                         borderRadius: "4px",
                         cursor: "pointer",
-                        fontSize: "25px",
+                        fontSize: "20px",
                         maxWidth: "300px"
                     }}
                 >
@@ -155,13 +154,13 @@ const VolsList = () => {
                                 <button
                                     onClick={() => handleSelectFlight(vol)}
                                     style={{
-                                        padding: "5px 10px",
+                                        padding: "10px 10px",
                                         backgroundColor: "#008080",
                                         color: "white",
                                         border: "none",
                                         borderRadius: "4px",
                                         cursor: "pointer",
-                                        fontSize: "25px",
+                                        fontSize: "20px",
                                         maxWidth: "300px"
                                     }}
                                 >

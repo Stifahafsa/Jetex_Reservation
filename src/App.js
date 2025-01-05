@@ -5,15 +5,20 @@ import VolsList from "./components/VolsList";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+
 function App() {
     return (
         <Router>
-            <Navbar /> {/* Ajout du Navbar ici */}
-            <Routes>
-                <Route path="/" element={<VolsList />} />
-                <Route path="/reservation" element={<VolsReservation />} />
-            </Routes>
-            <Footer /> {/* Ajout du Footer ici, à l'intérieur du Router */}
+            <div className="app-container">
+                <Navbar />
+                <div className="content">
+                    <Routes>
+                        <Route path="/" element={<VolsList />} />
+                        <Route path="/reservation" element={<VolsReservation />} />
+                    </Routes>
+                </div>
+                <Footer />
+            </div>
         </Router>
     );
 }

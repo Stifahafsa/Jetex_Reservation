@@ -12,13 +12,14 @@ const VolsReservation = () => {
 
     return (
         <div className="ticket-container">
-            <img src="logo.png" alt="Logo" className="ticket-logo" />
+            <img src="lg.png" alt="Logo" className="ticket-logo" />
             <h2>Réservation confirmée</h2>
             <h3>Détails du vol :</h3>
             <div className="ticket-details">
                 <p><strong>Ville de départ:</strong> {flightDetails.villedepart}</p>
                 <p><strong>Ville d'arrivée:</strong> {flightDetails.villearrivee}</p>
                 <p><strong>Prix initial:</strong> {flightDetails.prix} MAD</p>
+
 
                 <h4>Services supplémentaires :</h4>
                 {Object.keys(flightDetails.services).length > 0 ? (
