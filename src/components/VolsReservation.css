@@ -1,0 +1,127 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal du billet */
+.ticket-container {
+    background-color: #ffffff;
+    width: 900px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo en haut du billet */
+.ticket-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Titre et section de détails */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Détails du vol */
+.ticket-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ticket-details strong {
+    color: #333;
+}
+
+/* Liste des services supplémentaires */
+ul.services-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+ul.services-list li {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Prix total */
+.total-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #008080;
+}
+
+/* Bouton d'impression */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+/* @media pour l'impression */
+@media print {
+    /* Cacher tout sauf le billet */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Afficher uniquement le billet */
+    .ticket-container, .ticket-container * {
+        visibility: visible;
+    }
+
+    /* Ajuster le billet pour qu'il soit bien imprimé */
+    .ticket-container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    /* Cacher le bouton d'impression */
+    button {
+        display: none;
+    }
+
+    /* S'assurer que tout le contenu est lisible à l'impression */
+    .total-price {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #008080;
+    }
+}
