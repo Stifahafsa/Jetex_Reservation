@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Gestion des Vols ✈️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est une application web développée en **React** et **Redux**, permettant de gérer et afficher une liste de vols en temps réel. L'objectif est de fournir une interface intuitive pour consulter les vols disponibles, incluant des informations comme la ville de départ, la ville d'arrivée, la date, le prix, et une image associée.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table des Matières
+1. [Aperçu](#aperçu)
+2. [Fonctionnalités](#fonctionnalités)
+3. [Technologies Utilisées](#technologies-utilisées)
+4. [Installation](#installation)
+5. [Structure du Projet](#structure-du-projet)
+6. [Utilisation](#utilisation)
+7. [Contributeurs](#contributeurs)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Aperçu
 
-### `npm test`
+![My First Redux app ](/public/site.png)
+![My First Redux app ](/public/reservation.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Fonctionnalités
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Affichage d'une liste de vols.
+- Chargement des données en temps réel via Redux.
+- Gestion des états avec Redux (loading, succès, erreur).
+- Design réactif et minimaliste.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Utilisées
 
-### `npm run eject`
+- **React** : Framework pour la construction de l'interface utilisateur.
+- **Redux** : Gestion de l'état global de l'application.
+- **React-Redux** : Liaison entre React et Redux.
+- **Redux Toolkit** : Simplification de la configuration Redux.
+- **CSS** : Pour le style de l'application.
+- **JavaScript (ES6)** : Langage de programmation principal.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clonez ce dépôt sur votre machine locale :
+   ```bash
+   git clone https://github.com/Stifahafsa/Jetex_Reservation.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Accédez au dossier du projet :
+   ```bash
+   cd gestvol
+   ```
 
-## Learn More
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Lancez l'application :
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+L'application sera accessible à l'adresse [http://localhost:3000](http://localhost:3000).
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Structure du Projet
 
-### Analyzing the Bundle Size
+Voici un aperçu de l'organisation des fichiers :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── components/
+│   ├── VolsList.jsx  # Composant principal pour afficher les vols
+├── reducers/
+│   ├── VolsReducer.js  # Gestion de l'état Redux pour les vols
+├── store/
+│   ├── index.js  # Configuration du store Redux
+├── App.js  # Composant principal
+├── index.js  # Point d'entrée de l'application
+├── index.css  # Styles globaux
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Utilisation
 
-### Advanced Configuration
+1. Lancez l'application avec `npm start`.
+2. Explorez les vols disponibles sur la page principale.
+3. Les vols se chargent automatiquement depuis un état global géré par Redux.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Contributeurs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Votre Nom** : Développeur principal.
 
-### `npm run build` fails to minify
+Si vous souhaitez contribuer, veuillez soumettre une *pull request* ou ouvrir une *issue*.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
