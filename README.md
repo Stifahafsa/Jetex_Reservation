@@ -97,7 +97,7 @@ src/
 
 ## Contributeurs
 
-- **Votre Nom** : Développeur principal.
+- **Stifa Hafsa** : Développeur principal.
 
 Si vous souhaitez contribuer, veuillez soumettre une *pull request* ou ouvrir une *issue*.
 
